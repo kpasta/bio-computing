@@ -3,19 +3,21 @@
 #include <string.h> // str::strlen
 using namespace std;
 
+// DEFINING FUNCTIONS
 //prints full string
 void printArr( char arr[] ) {
+	// find legnth of array for loop
 	int len = strlen(arr);
-	// loop through array
+	// loop through array and print
 	for( int i = 0; i < len; i++ ) {
 		cout << arr[i];
-	}
-}
-
+}}
+// compare strings and match the pattern
 void findPattern( char pattern[][5], char strand[] ){
+	// get length of string for loops
 	int slen = strlen(strand);
 	int k = 0;
-	// loop through strand
+	// loop through strand to find pattern
 	for( int i=0; i<(slen-3); i++ ){
 		// test each pattern
 		for( int j=0; j<5; j++){
@@ -25,12 +27,8 @@ void findPattern( char pattern[][5], char strand[] ){
 				k++;
 				if( k == 4 ){
 					cout << i << ", ";
-				}
-			}
-		}
-	}
-}
-
+}}}}}
+// MAIN PROGRAM
 int main() {
 	// your code goes here
 	
